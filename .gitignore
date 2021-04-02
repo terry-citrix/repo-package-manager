@@ -91,3 +91,4 @@ build
 
 # Ignore IDE files from IntelliJ IDEA
 .idea
+bin

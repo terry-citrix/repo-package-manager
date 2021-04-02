@@ -15,8 +15,11 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 repositories {
-    // Use JCenter for resolving dependencies.
+    mavenCentral()
     jcenter()
+    maven {
+        url "https://raw.githubusercontent.com/terry-citrix/repo-package-manager/main/maven/"
+    }
 }
 
 dependencies {
@@ -24,7 +27,7 @@ dependencies {
     testImplementation 'junit:junit:4.13'
 
     // This dependency is used by the application.
-    implementation 'com.google.guava:guava:29.0-jre'
+    implementation 'com.terry:hermes-messenger:1.0'
 }
 
 application {
@@ -35,7 +38,10 @@ application {
 jar {
     manifest {
         attributes(
-                'Main-Class': 'com.terry.sampleapp.App'
+            'Main-Class': 'com.terry.sampleapp.App'
         )
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
     }
 }

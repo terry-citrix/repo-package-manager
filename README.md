@@ -37,6 +37,8 @@ As noted, it's not uncommon for source code repositories to also host the binari
 
 Turning a source code repository into a package manager repository is therefore just a matter of structuring the directory layout to conform to the package manager's specification.
 
+Github in particular also provides built-in support for publishing packages to the repo.  See https://docs.github.com/en/packages/manage-packages/viewing-packages for more information. However they don't support all package managers, such as Cocoapods. 
+
 ## Hermes-Messenger
 This repo is an example of how to structure a source code repository to also act as package manager repository, either along-side the actual source code or even exclusively just as a package manager repository.
 

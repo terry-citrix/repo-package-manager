@@ -3,12 +3,56 @@
  */
 package com.terry.sampleapp;
 
+import com.terry.hermes.Messenger;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class App {
+
+    public void start() {
+        System.out.println(getGreeting());
+
+        Messenger messenger = new Messenger();
+
+        do {
+            messenger.deliverMessage();
+            System.out.println("Type 'c' to send another message, or type 'q' to quit.");
+        } while (isContinue());
+
+    }
+
+    public boolean isContinue() {
+        BufferedReader reader = new BufferedReader(
+                new InputStreamReader(System.in));
+
+        // Reading data using readLine
+        try {
+            String input = reader.readLine();
+
+            if (input == null || input.isEmpty()) {
+                return false;
+            }
+
+            if (input.equalsIgnoreCase("c")) {
+                return true;
+            }
+
+        } catch (IOException ex) {
+            System.err.println("ERROR: Unable to read from System.in!");
+            return false;
+        }
+
+        return false;
+    }
+
     public String getGreeting() {
-        return "Hello World!";
+        return "Hello!";
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        App app = new App();
+        app.start();
     }
 }
