@@ -1,0 +1,70 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.terry",
+    "module": "hermes-messenger",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.8.3",
+      "buildId": "xcqpvlh6c5cxldv3r63z3khuoi"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "hermes-messenger-1.0.jar",
+          "url": "hermes-messenger-1.0.jar",
+          "size": 1192,
+          "sha512": "7a9e15317b6c0f65b6992a5af6a023d12069f21278f48a49ceaa8158a8038e6f37dcd1d3a026ee0152e6b2336b23b39dfb63ab5f63b5b4c94256999b2be5d9f5",
+          "sha256": "02cfc7d46cbd791a4542e31ab860e5a9e6155b41d3af81f1a97166e295c80c8e",
+          "sha1": "b0aece5bdb0dd50b7c34740b9ccdf278f2a2084c",
+          "md5": "22b7f7e1ddde1eb364a0083567bce495"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "29.0-jre"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "hermes-messenger-1.0.jar",
+          "url": "hermes-messenger-1.0.jar",
+          "size": 1192,
+          "sha512": "7a9e15317b6c0f65b6992a5af6a023d12069f21278f48a49ceaa8158a8038e6f37dcd1d3a026ee0152e6b2336b23b39dfb63ab5f63b5b4c94256999b2be5d9f5",
+          "sha256": "02cfc7d46cbd791a4542e31ab860e5a9e6155b41d3af81f1a97166e295c80c8e",
+          "sha1": "b0aece5bdb0dd50b7c34740b9ccdf278f2a2084c",
+          "md5": "22b7f7e1ddde1eb364a0083567bce495"
+        }
+      ]
+    }
+  ]
+}

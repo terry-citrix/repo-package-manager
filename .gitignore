@@ -86,4 +86,7 @@ build
 
 # Ignore IDE files from Visual Studio Code
 .vscode
+.project
 
+# Ignore IDE files from IntelliJ IDEA
+.idea
