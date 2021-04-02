@@ -28,3 +28,11 @@ application {
     // Define the main class for the application.
     mainClass = 'com.terry.sampleapp.App'
 }
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'com.terry.sampleapp.App'
+        )
+    }
+}
