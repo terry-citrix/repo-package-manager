@@ -84,9 +84,10 @@ build
 #  IDEs
 #
 
-# Ignore IDE files from Visual Studio Code
+# Ignore IDE files from Visual Studio Code (and Eclipse plugin)
 .vscode
 .project
+.classpath
 
 # Ignore IDE files from IntelliJ IDEA
 .idea
