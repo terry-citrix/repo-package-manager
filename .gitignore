@@ -79,9 +79,12 @@ iOSInjectionProject/
 # Ignore Gradle build output directory
 build
 
+# Ignore Maven distribution directory and configuration
+.m2
+
 #################
 #
-#  IDEs
+#  IDEs and Miscellaneous
 #
 
 # Ignore IDE files from Visual Studio Code (and Eclipse plugin)

@@ -55,8 +55,19 @@ publishing {
     }
     repositories {
         maven {
-            // Publish to our local repo.
+            // Publish to this repo.
             url = "$buildDir/../../../../../maven/"
         }
+        /*
+        maven {
+            // Publish to GitHub's built-in Package Manager Repository
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/terry-citrix/repo-package-manager")
+            credentials {
+                username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_WORK_USERNAME")
+                password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_WORK_TOKEN")
+            }
+        }
+        */
     }
 }

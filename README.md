@@ -28,7 +28,7 @@ Examples of well-known package manager repositories include:
 ## Why not use an existing Package Manager Repository?
 The biggest reason is typically because you wish to distribute an SDK or some other type of library that is not open-source. The development of package managers came about mostly as a result of the open-source community, to easily share and distribute their creations. Sometimes enterprises, even those who contribute to (and create) open-source projects, also need to distribute binaries without the source code for legal or other reasons.
 
-Not all public package manager repositories allow closed-source binaries to be distributed from their repository.
+Not all public package manager repositories allow closed-source binaries to be distributed from their repository. Others do, but have other problems such as [requiring authentication](https://github.community/t/download-from-github-package-registry-without-authentication/14407/110).
 
 ## Why use a Code Repo as a Package Manager Repository?
 Public source code repositories, such as github.com and others, offer a convenient way to make available source code and other artifacts. They are increasingly being used for other purposes as well, such as for documentation, meeting notes, wikis, bug tracking, release binaries, and anything else that is tangentially related to code.
@@ -37,7 +37,7 @@ As noted, it's not uncommon for source code repositories to also host the binari
 
 Turning a source code repository into a package manager repository is therefore just a matter of structuring the directory layout to conform to the package manager's specification.
 
-Github in particular also provides built-in support for publishing packages to the repo.  See https://docs.github.com/en/packages/manage-packages/viewing-packages for more information. However they don't support all package managers, such as Cocoapods. 
+Github in particular also provides built-in support for publishing packages to the repo.  See https://docs.github.com/en/packages/manage-packages/viewing-packages for more information. However they don't support all package managers, such as Cocoapods. Worse, it also (as of April 2021) requires [user authentication](https://github.community/t/download-from-github-package-registry-without-authentication/14407/110) in order to use it, which makes it incredibly impractical to use.
 
 ## Hermes-Messenger
 This repo is an example of how to structure a source code repository to also act as package manager repository, either along-side the actual source code or even exclusively just as a package manager repository.

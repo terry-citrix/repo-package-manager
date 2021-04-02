@@ -3,9 +3,18 @@
  */
 package com.terry.hermes;
 
+/**
+ * Very simple class that is used to implement a small library. The actual functionality is not consequential; the
+ * key part is that we're demonstrating how to use a library that was packaged via Maven to a source code repo.
+ */
 public class Messenger {
     private int messagesDelivered = 0;
 
+    /**
+     * Prints a message to System.out with the number of times that this method has been called.
+     *
+     * @return Always returns true.
+     */
     public boolean deliverMessage() {
         messagesDelivered++;
         System.out.println("Hermes has delivered " + messagesDelivered + " messages.");
