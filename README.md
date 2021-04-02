@@ -1,5 +1,5 @@
 # Repo Package Manager
-The intent is to serve as a sample or template of how to use a public repo as a Package Manager repository.
+The intent is to serve as a sample or template of how to use **any** public source code repo as a package manager repository.
 
 ## What is a Package Manager?
 Package Managers offer a lot of benefits when distributing binaries (aka packages), such as automatic checksum validation, determining compatible versions, consistent distribution model, integration with build systems, and installation.
